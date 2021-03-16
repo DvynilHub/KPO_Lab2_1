@@ -1,12 +1,12 @@
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
 public class Reader {
     public static void main(String[] args) {
-        read();
-    }
-    public static void read(){
         BufferedReader br = null;
         try {
-            br = new BufferedReader(new FileReader("C:\\Users\\User\\Desktop\\123.txt"));
+            br = new BufferedReader(new FileReader("123.txt"));
             String tmp = "";
             while ((tmp = br.readLine()) != null) {// пробел использовать как разделитель
                 String[] s = tmp.split("\\s");
@@ -32,5 +32,9 @@ public class Reader {
                 }
             }
         }
+
     }
+
+
+
 }
